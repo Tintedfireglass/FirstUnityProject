@@ -28,4 +28,8 @@ public class score : MonoBehaviour
     {
         scorecard.text = pt;
     }
+    public void ReScore()
+    {
+        scorecard.text = "0";
+    }
 }

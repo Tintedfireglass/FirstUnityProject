@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,9 +18,14 @@ public class GameManager : MonoBehaviour
 
         FindObjectOfType<score>().enabled = false;
         FindObjectOfType<PlayerMotion>().enabled = false;
+        Invoke("restart", 5);
+        
     }
     void restart()
     {
-
+        FindObjectOfType<score>().enabled = true;
+        FindObjectOfType<PlayerMotion>().PositionReset();
+        FindObjectOfType<PlayerMotion>().enabled = true;
+        FindObjectOfType<score>().ReScore();
     }
 }

@@ -31,4 +31,11 @@ public class PlayerMotion : MonoBehaviour
             FindObjectOfType<GameManager>().EndGame();
         }
     }
+    public void PositionReset()
+    {
+        Vector3 res = new Vector3(0, 1, -45);
+        rb.position = res;
+        Vector3 resvel = new Vector3(0, 0, 0);
+        rb.velocity = resvel;
+    }
 }
