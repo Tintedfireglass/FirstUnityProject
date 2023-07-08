@@ -6,6 +6,7 @@
 *.hlsl linguist-detectable=false
 *.cso linguist-detectable=false
 *.fx linguist-detectable=false
+*.cginc linguist-detectable=false
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
