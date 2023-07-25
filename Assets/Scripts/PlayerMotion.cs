@@ -17,7 +17,7 @@ public class PlayerMotion : MonoBehaviour
     {
         rb.AddForce(0,0,fdforce*Time.deltaTime);
 
-        if (Input.GetKey("d")){
+        if (Input.GetKey(KeyCode.D)){
             rb.AddForce(sdforce,0,0);
         }
         else if (Input.GetKey("a")){
